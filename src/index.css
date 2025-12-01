@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --blush: #b8848a;
+  --petal: #f7efe9;
+  --rose: #d5757f;
+  --coral: #f59aa2;
+  --leaf: #4f7c63;
+  --ink: #3f2c30;
+  --champagne: #e7b766;
+  --card: rgba(255, 255, 255, 0.85);
+  --soft-shadow: 0 20px 50px rgba(63, 44, 48, 0.18);
+  font-family: "Work Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background-color: var(--blush);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(245, 154, 162, 0.16), transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(79, 124, 99, 0.18), transparent 22%),
+    radial-gradient(circle at 40% 70%, rgba(231, 183, 102, 0.2), transparent 20%),
+    var(--blush);
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
