@@ -141,7 +141,7 @@ export default function Upload() {
             <input
               id="name"
               type="text"
-              placeholder="e.g., Priya Singh"
+              placeholder="e.g., Gourab Kar"
               value={guestName}
               onChange={(e) => setGuestName(e.target.value)}
             />
