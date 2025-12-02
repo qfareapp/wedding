@@ -1,7 +1,15 @@
 import axios from "axios";
 
-const fallbackBase = "http://localhost:5000/api";
-const apiBase = import.meta.env.VITE_API_BASE || fallbackBase;
+const isDev = import.meta.env.DEV;
+const rawBase = import.meta.env.VITE_API_BASE?.replace(/\/$/, "");
+// Normalize base so it always points at /api (handles envs set to domain only)
+const envBase = rawBase
+  ? rawBase.endsWith("/api")
+    ? rawBase
+    : `${rawBase}/api`
+  : null;
+
+const apiBase = envBase || (!isDev ? "/api" : "http://localhost:5000/api");
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const api = axios.create({
