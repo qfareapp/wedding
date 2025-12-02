@@ -30,6 +30,7 @@
     radial-gradient(circle at 70% 20%, rgba(79, 124, 99, 0.7), transparent 38%),
     radial-gradient(circle at 70% 70%, rgba(231, 183, 102, 0.7), transparent 35%),
     radial-gradient(circle at 30% 80%, rgba(213, 117, 127, 0.65), transparent 45%);
+  pointer-events: none;
 }
 
 .hero__floral--left {
